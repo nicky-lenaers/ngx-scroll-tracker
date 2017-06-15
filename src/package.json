@@ -1,5 +1,5 @@
 {
-  "name": "ngx-scroll-tracker",
+  "name": "@nicky-lenaers/ngx-scroll-tracker",
   "version": "0.0.1",
   "description": "Angular X Scroll Tracker",
   "main": "bundles/ngx-scroll-tracker.umd.min.js",

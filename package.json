@@ -1,5 +1,5 @@
 {
-  "name": "ngx-scroll-tracker",
+  "name": "@nicky-lenaers/ngx-scroll-tracker",
   "version": "0.0.1",
   "description": "Angular X Scroll Tracker",
   "main": "dist/index.js",
@@ -10,7 +10,9 @@
     "package": "rollup -c rollup.config.ts",
     "minify": "uglifyjs dist/bundles/ngx-scroll-tracker.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngx-scroll-tracker.umd.min.js",
     "build": "npm run clean && npm run transpile && npm run package && npm run minify && npm run copy",
-    "test": ""
+    "prepublish": "npm run build",
+    "publish": "cd ./dist && npm publish --access=public",
+    "test": "echo \"No test command\""
   },
   "repository": {
     "type": "git",
@@ -42,17 +44,19 @@
   "dependencies": {
     "@angular/common": "^4.2.2",
     "@angular/core": "^4.2.2",
+    "@angular/platform-browser": "^4.2.2",
+    "@angular/platform-browser-dynamic": "^4.2.2",
     "rxjs": "^5.4.0",
     "zone.js": "^0.8.12"
   },
   "devDependencies": {
     "@angular/compiler": "^4.2.2",
     "@angular/compiler-cli": "^4.2.2",
+    "@types/node": "^7.0.31",
     "copyfiles": "^1.2.0",
     "renamer": "^0.6.1",
     "rimraf": "^2.6.1",
     "rollup": "^0.43.0",
-    "ts-node": "^3.0.6",
     "typescript": "^2.3.4",
     "uglify-js": "^3.0.16"
   }
