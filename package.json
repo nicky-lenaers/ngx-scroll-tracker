@@ -1,6 +1,6 @@
 {
   "name": "@nicky-lenaers/ngx-scroll-tracker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Angular X Scroll Tracker",
   "main": "dist/index.js",
   "scripts": {
