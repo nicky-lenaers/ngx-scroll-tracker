@@ -1,4 +1,8 @@
 .vscode
-.tmp
+.*
+!/.gitignore
 dist
 node_modules
+
+*.ngfactory.ts
+*.css.shim.ts

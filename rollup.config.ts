@@ -15,6 +15,7 @@ export default {
     external: [
         '@angular/core',
         '@angular/common',
+		'@angular/platform-browser',
 		'rxjs'
     ]
 }
