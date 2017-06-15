@@ -7,6 +7,8 @@ export default {
     globals: {
         '@angular/core': 'ng.core',
         '@angular/common': 'ng.common',
+        '@angular/platform-browser': 'ng.platformBrowser',
+        'rxjs/Subscription': 'Rx',
         'rxjs/Observable': 'Rx',
         'rxjs/ReplaySubject': 'Rx'
     },
