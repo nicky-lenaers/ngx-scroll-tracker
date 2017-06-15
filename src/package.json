@@ -1,0 +1,37 @@
+{
+  "name": "@nicky-lenaers/ngx-scroll-tracker",
+  "version": "0.0.1",
+  "description": "Angular X Scroll Tracker",
+  "main": "bundles/ngx-scroll-tracker.umd.min.js",
+  "module": "index.js",
+  "typings": "index.d.ts",
+  "keywords": [
+    "ngx",
+    "ngx-scroll-tracker",
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular4",
+    "angular 4"
+  ],
+  "author": {
+    "name": "Nicky Lenaers",
+    "email": "nicky@nite-dev.nl"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicky-lenaers/ngx-scroll-tracker.git"
+  },
+  "homepage": "https://github.com/nicky-lenaers/ngx-scroll-tracker#readme",
+  "bugs": {
+    "url": "https://github.com/nicky-lenaers/ngx-scroll-tracker/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^4.2.2",
+    "@angular/core": "^4.2.2",
+    "@angular/platform-browser": "^4.2.2",
+    "rxjs": "^5.4.0",
+    "zone.js": "^0.8.12"
+  }
+}

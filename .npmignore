@@ -1,4 +1,4 @@
 .vscode
 .tmp
-dist
+.editorconfig
 node_modules
