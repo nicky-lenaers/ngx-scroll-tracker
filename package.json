@@ -2,13 +2,15 @@
   "name": "ngx-scroll-tracker",
   "version": "0.0.1",
   "description": "Angular X Scroll Tracker",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf .tmp && rimraf dist",
+    "copy": "copyfiles -u 1 ./src/package.json dist && copyfiles README.md dist",
     "transpile": "ngc",
-    "package": "rollup -c",
+    "package": "rollup -c rollup.config.ts",
     "minify": "uglifyjs dist/bundles/ngx-scroll-tracker.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngx-scroll-tracker.umd.min.js",
-    "build": "npm run clean && npm run transpile && npm run package && npm run minify"
+    "build": "npm run clean && npm run transpile && npm run package && npm run minify && npm run copy",
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,10 @@
     "angular4",
     "angular 4"
   ],
-  "author": "Nicky Lenaers",
+  "author": {
+    "name": "Nicky Lenaers",
+    "email": "nicky@nite-dev.nl"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nicky-lenaers/ngx-scroll-tracker/issues"
@@ -43,8 +48,11 @@
   "devDependencies": {
     "@angular/compiler": "^4.2.2",
     "@angular/compiler-cli": "^4.2.2",
+    "copyfiles": "^1.2.0",
+    "renamer": "^0.6.1",
     "rimraf": "^2.6.1",
     "rollup": "^0.43.0",
+    "ts-node": "^3.0.6",
     "typescript": "^2.3.4",
     "uglify-js": "^3.0.16"
   }
