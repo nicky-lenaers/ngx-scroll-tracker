@@ -58,6 +58,7 @@ The `ScrollTrackerEventData` interface defines the data being emitted from the t
 |              |                                       |
 
 The `data` property holds the following properties:
+
 | Property                            | Description                                                                                                      |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | `elementTop.fromContainerTop`       | Distance between the top of the tracked element and the top of its scrollable container (pixels and ratio)       |
