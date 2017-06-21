@@ -96,3 +96,6 @@ export class MyComponent {
   }
 }
 ```
+
+# License
+ [MIT](/LICENSE)
