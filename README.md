@@ -1,3 +1,7 @@
+# PROJECT NO LONGER MAINTAINED
+
+## Please use native `intersection-observer` to achieve similar results
+
 # ngx-scroll-tracker
 
 Track any element to enhance scroll-based features in you app.<br>
